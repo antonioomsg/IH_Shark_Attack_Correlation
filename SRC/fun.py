@@ -6,5 +6,5 @@ def drop_null(table,subset):
 def standardize_data(df,column,old,new):
     df[column] = df[column].replace(old, new)
 
-def c_data(column):
+def c_data(df,column):
      print(df[f"{column}"].value_counts())
